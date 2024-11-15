@@ -3,7 +3,7 @@ public class Control {
     TV tv;
     public void enlazar(TV t){
         tv=t;
-        tv.control=this;
+        t.control=this;
     }
     public void turnOn(){
         tv.estado=true;

@@ -23,13 +23,17 @@ public class TV {
         marca=m;
     }
     public void setCanal(int c){
-        canal=c;
+        if (canal>=0 && canal<=120 && estado==true) {
+            canal=c;
+        }
     }
     public void setPrecio(int p){
         precio=p;
     }
     public void setVolumen(int v){
-        volumen=v;
+        if (volumen>=0 && volumen<=7 && estado==true) {
+            volumen=v;
+        }
     }
     public void setControl(Control con){
         control=con;
