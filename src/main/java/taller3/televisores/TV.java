@@ -23,7 +23,7 @@ public class TV {
         marca=m;
     }
     public void setCanal(int c){
-        if (canal>=1 && canal<=120 && estado==true) {
+        if (c>=1 && c<=120 && estado==true) {
             canal=c;
         }
     }
@@ -31,7 +31,7 @@ public class TV {
         precio=p;
     }
     public void setVolumen(int v){
-        if (volumen>=0 && volumen<=7 && estado==true) {
+        if (v>=0 && v<=7 && estado==true) {
             volumen=v;
         }
     }
