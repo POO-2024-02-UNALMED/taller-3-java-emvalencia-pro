@@ -23,7 +23,7 @@ public class TV {
         marca=m;
     }
     public void setCanal(int c){
-        if (canal>=0 && canal<=120 && estado==true) {
+        if (canal>=1 && canal<=120 && estado==true) {
             canal=c;
         }
     }
@@ -56,23 +56,23 @@ public class TV {
     }
 
     public void canalUp(){
-        if (canal>=0 && canal<=120 && estado==true) {
+        if (canal>=1 && canal<120 && estado==true) {
             canal++;
         }
     }
     public void canalDown(){
-        if (canal>=0 && canal<=120 && estado==true) {
+        if (canal>1 && canal<=120 && estado==true) {
             canal--;
         }
     }
 
     public void volumenUp(){
-        if (volumen>=0 && volumen<=7 && estado==true) {
+        if (volumen>=0 && volumen<7 && estado==true) {
             volumen++;
         }
     }
     public void volumenDown(){
-        if (volumen>=0 && volumen<=7 && estado==true) {
+        if (volumen>0 && volumen<=7 && estado==true) {
             volumen--;
         }
     }
