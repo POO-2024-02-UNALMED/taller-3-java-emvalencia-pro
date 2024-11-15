@@ -3,16 +3,16 @@ public class Control {
     TV tv;
     public void enlazar(TV t){
         tv=t;
-        t.control=this;
+        t.setControl(this);
     }
     public void turnOn(){
-        tv.estado=true;
+        tv.turnOn();
     }
     public void turnOff(){
-        tv.estado=false;
+        tv.turnOff();
     }
     public boolean getEstado(){
-        return tv.estado;
+        return tv.getEstado();
     }
 
     public void canalUp(){
